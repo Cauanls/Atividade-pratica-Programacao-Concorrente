@@ -1,31 +1,34 @@
 # Atividade-pratica-Programacao-Concorrente
 
-O sistema deve conter pelo menos as seguintes entidades:
-● Banco;
-● Loja;
-● Funcionário;
-● Cliente;
-● Conta;
-E deve conter um total de:
-● 1 banco;
-● 2 lojas;
-● 4 funcionários (2 por loja);
-● 5 clientes;
-Cada cliente:
-● Deve ser uma thread;
-● Deve possuir uma conta com um saldo inicial de R$ 1.000,00;
-● Deve realizar compras, de R$ 100,00 ou R$ 200,00, alternando as lojas, até o saldo da conta estar
-vazio.
-Cada loja:
-● Deve possuir uma conta, para receber os pagamentos dos clientes;
-● Deve pagar os funcionários assim que possuir o valor dos seus salários (R$ 1.400,00);
-Cada funcionário:
-● Deve ser uma thread;
-● Deve possuir duas contas, uma para receber o salário da loja e outra de investimentos;
-● Deve investir 20% do salário na conta de investimentos logo após seu recebimento.
-O banco:
-● Deve intermediar as transações de forma síncrona e coordenada, garantindo a consistência dos
-saldos das contas.
-Além disso, o sistema deve exibir o valor das transferências e o saldo final de cada conta, garantindo
-que os saldos estejam consistentes ao fim da execução, independente da ordem em que as
-transações foram feitas.
+Este é um projeto Java que simula um sistema bancário utilizando threads e os conceitos de concorrência. O sistema é composto por várias entidades, incluindo bancos, lojas, funcionários, clientes e contas.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Funcionalidades do Sistema
+
+O sistema possui as seguintes funcionalidades:
+
+Banco: Gerencia as transações e garante a consistência dos saldos das contas.
+
+Loja: Possui uma conta para receber pagamentos dos clientes e pagar salários aos funcionários.
+
+Funcionário: Recebe salário da loja e investe parte do salário em uma conta de investimentos.
+
+Cliente: Realiza compras alternando entre lojas até o saldo da conta ser esgotado.
+
+Conta: Gerencia o saldo do cliente e do funcionário.
+
+Configuração do Projeto
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+O projeto está estruturado da seguinte forma:
+
+Main.java: Arquivo principal que inicia o sistema.
+
+Banco.java: Classe que representa o banco e gerencia as transações.
+
+Loja.java: Classe que representa as lojas e suas contas.
+
+Funcionario.java: Classe que representa os funcionários e suas contas.
+
+Cliente.java: Classe que representa os clientes e suas contas.
+
+Conta.java: Classe que representa as contas dos clientes e funcionários.
